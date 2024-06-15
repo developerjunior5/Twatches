@@ -33,28 +33,28 @@ ScrollReveal().reveal("#main-container i", {
   delay: 2000,
 });
 
-ScrollReveal().reveal(".story__image img", {
+ScrollReveal().reveal("#story__image img", {
   ...scrollRevealOption,
   origin: "left",
 });
-ScrollReveal().reveal(".story__content .section__header", {
+ScrollReveal().reveal("#story__content .section__header", {
   ...scrollRevealOption,
   delay: 500,
 });
-ScrollReveal().reveal(".story__content h4", {
+ScrollReveal().reveal("#story__content h4", {
   ...scrollRevealOption,
   delay: 1000,
 });
-ScrollReveal().reveal(".story__content p", {
+ScrollReveal().reveal("#story__content p", {
   ...scrollRevealOption,
   delay: 1500,
 });
-ScrollReveal().reveal(".story__content .story__btn", {
+ScrollReveal().reveal("#story__content .story__btn", {
   ...scrollRevealOption,
   delay: 2000,
 });
 
-ScrollReveal().reveal(".client__image img", {
+ScrollReveal().reveal("#client__image img", {
   ...scrollRevealOption,
   origin: "right",
 });
