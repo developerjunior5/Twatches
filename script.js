@@ -20,6 +20,10 @@ ScrollReveal().reveal("#main-container h2", {
   ...scrollRevealOption,
   delay: 500,
 });
+ScrollReveal().reveal("#watches ", {
+  ...scrollRevealOption,
+  delay: 500,
+});
 ScrollReveal().reveal("#main-container p", {
   ...scrollRevealOption,
   delay: 1000,

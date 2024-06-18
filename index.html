@@ -23,7 +23,7 @@
   <body>
     <header>
       <nav
-        class="bg-primary-color md:bg-white flex flex-wrap h-[90px] justify-between w-full"
+        class="bg-primary-color md:bg-white flex flex-wrap h-[90px] justify-between w-full p-6"
         id="navbar"
       >
         <img src="/images/logo.png" alt="logo" class="h-[70px] w-[80px]" />
@@ -35,13 +35,11 @@
             <a href="/"
               ><li class="text-black font-Rubik uppercase">Home</li></a
             >
-            <a href="/"
-              ><li class="text-black font-Rubik uppercase">Home</li></a
+            <a href="#watches"
+              ><li class="text-black font-Rubik uppercase">Watches</li></a
             >
-            <a href="/"
-              ><li class="text-black font-Rubik uppercase bg-primary-color">
-                Home
-              </li></a
+            <a href="#about"
+              ><li class="text-black font-Rubik uppercase">About</li></a
             >
             <i class="fa-solid fa-magnifying-glass" style="color: #3e1929"></i>
           </ul>
@@ -49,7 +47,7 @@
         <p
           class="hidden md:block md:bg-primary-color py-2 px-6 h-[40px] text-white font-Rubik w-[140px] text-center uppercase rounded-md"
         >
-          !Search
+          Discover
         </p>
         <div class="m-5 mr-5 h-[30px] md:hidden">
           <i
@@ -58,27 +56,30 @@
             id="menu"
           ></i>
           <div
-            class="hidden left-0 bg-black h-[100px] w-[100%] top-20 absolute z-10"
+            class="hidden left-0 bg-primary-color h-[100px] w-[100%] top-20 absolute z-10"
             id="mobile-nav"
           >
             <ul class="flex flex-col text-white text-center">
               <a href="/"
                 ><li class="text-white font-Rubik uppercase">Home</li></a
               >
-              <a href="/"
-                ><li class="text-white font-Rubik uppercase">Home</li></a
+              <a href="#watches"
+                ><li class="text-white font-Rubik uppercase">Watches</li></a
               >
-              <a href="/"
-                ><li class="text-whi te font-Rubik uppercase">Home</li></a
+              <a href="#about"
+                ><li class="text-whi te font-Rubik uppercase">About</li></a
               >
             </ul>
           </div>
         </div>
       </nav>
-      <main class="flex flex-col-reverse md:flex-row" id="header">
+      <main
+        class="flex flex-col-reverse md:flex-row justify-between"
+        id="header"
+      >
         <div class="" id="main-container">
           <h2
-            class="mx-auto font-Modern w-[604px] ml-[20px] text-[43px] md:text-[63px] md:w-[624px] pt-[110px] md:ml-[90px]"
+            class="mx-auto font-Modern w-[604px] ml-[20px] text-[43px] md:text-[63px] md:w-[624px] pt-[60px] md:ml-[90px]"
           >
             Timeless Elegance, Delivered Daily
           </h2>
@@ -119,12 +120,12 @@
           <img
             src="/images/image1.png"
             alt="watch1"
-            class="h-[514px] w-[565px]"
+            class="hidden lg:block h-[514px] w-[565px]"
           />
         </div>
       </main>
     </header>
-    <section class="">
+    <section class="" id="watches">
       <hr />
       <p
         class="text-center font-Rubik font-semibold text-[20px] md:text-[40px] uppercase mt-[100px]"
@@ -132,59 +133,103 @@
         We value Quality over Quantity
       </p>
       <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:mx-auto"
       >
         <div class="flex flex-col m-6 hover:shadow-xl">
-          <img src="/images/image2.png" alt="image2" />
-          <p class="text-center text-[20px] font-bold uppercase">Rolex</p>
-          <p class="text-center font-semibold text-[#6E75A8]">
-            <sup>$</sup>200
+          <img src="/images/watch2.webp" alt="image2" />
+          <p class="text-center text-[13px] font-normal text-gray-400">
+            Seiko Prospex ‘Grand Touring’ Solar Speedtimer Chronograph -
+            SSC939P1
           </p>
+          <p class="text-center font-semibold text-[#6E75A8]">R 17,995.00</p>
         </div>
         <div class="flex flex-col m-6 hover:shadow-xl">
-          <img src="/images/image3.png" alt="image2" />
-          <p class="text-center text-[20px] font-bold uppercase">Cavin</p>
-          <p class="text-center font-semibold text-[#6E75A8]">
-            <sup>$</sup>870
+          <img src="/images/watch3.webp" alt="image2" />
+          <p class="text-center text-[13px] font-normal text-gray-400">
+            Seiko Prospex ‘Racing Sports’ Solar Speedtimer Chronograph -
+            SSC943P1
           </p>
+          <p class="text-center font-semibold text-[#6E75A8]">R 16,995.00</p>
         </div>
         <div class="flex flex-col m-6 hover:shadow-xl">
-          <img src="/images/image4.png" alt="image2" />
-          <p class="text-center text-[20px] font-bold uppercase">Linux/p></p>
-          <p class="text-center font-semibold text-[#6E75A8]">
-            <sup>$</sup>560
+          <img src="/images/watch4.webp" alt="image2" />
+          <p class="text-center text-[13px] font-normal text-gray-400">
+            Seiko Presage Classic Series ‘Araigaki’ - SPB467J1
           </p>
+          <p class="text-center font-semibold text-[#6E75A8]">R 31,950.00</p>
         </div>
         <div class="flex flex-col m-6 hover:shadow-xl">
-          <img src="/images/image5.png" alt="image2" />
-          <p class="text-center text-[20px] font-bold uppercase">Giovani</p>
-          <p class="text-center font-semibold text-[#6E75A8]">
-            <sup>$</sup>400
+          <img src="/images/watch4.webp" alt="image2" />
+          <p class="text-center text-[13px] font-normal text-gray-400">
+            Seiko Presage Classic Series ‘Araigaki’ - SPB467J1
           </p>
+          <p class="text-center font-semibold text-[#6E75A8]">R 31,950.00</p>
         </div>
       </div>
     </section>
-    <section>
-      <div class="flex flex-wrap">
-        <div class="bg-primary-color p-10">
-          <img src="/images//image6.jpg" class="h-[400px] w-[400px]" />
+    <section id="about">
+      <div class="flex flex-col p-7 md:flex-row md:p-7">
+        <div class="mx-auto">
+          <img
+            src="images/about-image.jpg"
+            alt="image-6"
+            class="h-[300px] w-[300px]"
+          />
         </div>
-        <div class="" id="story__content">
-          <h2 class="" id="section__header">OUR STORY</h2>
-          <h4>Inspirational Watch Of This Year</h4>
-          <p>
-            Each timepiece featured in this collection embodies the pinnacle of
-            horological artistry, blending cutting-edge design with unparalleled
-            functionality.
-          </p>
-          <div class="" id="story__btn">
-            <button class="" id="btn">DISCOVER</button>
+        <div>
+          <div class="mx-auto md:pl-[40px]" id="story__content">
+            <h2
+              class="font-Modern text-[24px] mt-7 md:text-[34px] lg:text-[44px]"
+              id="section__header"
+            >
+              OUR STORY
+            </h2>
+            <h4
+              class="text-primary-color font-bold font-Poppins md:text-[20px]"
+            >
+              Inspirational Watch Of This Year
+            </h4>
+            <p class="font-normal text-gray-400 mt-4 md:text-[16px]">
+              Each timepiece featured in this collection embodies the pinnacle
+              of horological artistry, blending cutting-edge design with
+              unparalleled functionality.
+            </p>
+            <div
+              class="bg-white border border-primary-color py-2 px-4 rounded-md w-[200px] font-Rubik text- mt-[30px]"
+              id="story__btn"
+            >
+              <button class="" id="btn">DISCOVER</button>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <section class="bg-primary-color p-4">
+      <h5 class="font-Modern text-[20px]">Subscribe to our Newsletter</h5>
+      <p class="font-normal mt-4 text-white">
+        Be the first to know about our latest arrivals, exclusive offers, and
+        insider updates by subscribing to our newsletter.
+      </p>
+      <form class="mt-5">
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          class="h-[39px] md:w-[250px]"
+        />
+        <button
+          class="bg-black text-white font-Poppins text-center rounded-sm px-5 py-2"
+        >
+          Subscribe
+        </button>
+      </form>
+    </section>
+    <footer class="h-[50px] text-center">
+      <h6 class="text-gray-500 mt-10">
+        Copyright &copy; 2024 developedbyjunior | All rights reserved
+      </h6>
+    </footer>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="/script.js"></script>
   </body>
 </html>
-<!-- <i class="fa-solid fa-magnifying-glass" style="color: #3e1929"></i> -->
