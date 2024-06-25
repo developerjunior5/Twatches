@@ -1,5 +1,7 @@
 const Menu = document.querySelector("#menu");
 const MobileNav = document.querySelector("#mobile-nav");
+loginButton = document.querySelector("btn-login");
+loginModal = document.querySelector("modal-login");
 
 Menu.addEventListener("click", function () {
   MobileNav.classList.toggle("hidden");
@@ -61,4 +63,41 @@ ScrollReveal().reveal("#story__content .story__btn", {
 ScrollReveal().reveal("#client__image img", {
   ...scrollRevealOption,
   origin: "right",
+});
+
+//login-modal
+//1 show modal using the btn
+
+//smooth scrolling
+document.querySelector(".nav__links").addEventListener("click", function (e) {
+  if (e.target.classList.contains("nav__link")) {
+    e.preventDefault();
+
+    const id = e.target.getAttribute("href");
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+  }
+});
+
+//sticky navbar
+const nav = document.querySelector(".nav");
+const header = document.querySelector(".header");
+const navHeight = nav.getBoundingClientRect().height;
+const stickyNav = function (entries) {
+  const [entry] = entries;
+  console.log(entry);
+
+  if (!entry.isIntersecting) nav.classList.add("sticky");
+  else nav.classList.remove("sticky");
+};
+const headerObserver = new IntersectionObserver(stickyNav, {
+  root: null,
+  rootMargin: `${navHeight}px`,
+  threshold: 0,
+});
+
+headerObserver.observe(header);
+
+document.querySelector(".btn__login").addEventListener("click", function () {
+  console.log("clicked");
+  document.querySelector(".modal__login").classList.toggle("hidden");
 });
