@@ -23,7 +23,7 @@
   <body>
     <header class="header">
       <nav
-        class="bg-[#231f20] flex flex-wrap h-[90px] justify-between w-full p-6 nav"
+        class="bg-[#231f20] flex flex-wrap h-[90px] justify-between w-[100%] p-6 nav"
       >
         <div class="hidden md:flex flex-wrap items-center">
           <svg
@@ -73,7 +73,7 @@
 
         <div class="text-center">
           <a href="/">
-            <h6 class="text-white text-[23px] font-Modern">Twatches</h6>
+            <h6 class="text-white text-[14px] font-Modern">Twatches</h6>
             <p
               class="text-white font-normal font-Poppins text-[13px] md:text-[16px] lg:text-[20px]"
             >
@@ -83,6 +83,7 @@
         </div>
         <div class="flex flex-wrap gap-3 items-center">
           <svg
+            class="search__bar--icon"
             xmlns="http://www.w3.org/2000/svg"
             width="1em"
             height="1em"
@@ -105,6 +106,7 @@
             />
           </svg>
           <svg
+            class="cart__menu--open"
             xmlns="http://www.w3.org/2000/svg"
             width="1em"
             height="1em"
@@ -116,6 +118,10 @@
             />
           </svg>
         </div>
+
+        <!---ALL THE INTERACTIONS SUCH AS THE SEARCH, NAV, CART-->
+
+        <!--The Navbar-->
         <div
           class="hidden left-0 top-0 bg-white h-screen w-[60%] duration-500 absolute z-10"
           id="mobile-nav"
@@ -183,11 +189,77 @@
           </ul>
         </div>
       </nav>
-      <div class="h-[100px] w-[100%] special__offer--container">
-        <h1 class="text-center font-Rubik font-bold text-[30px]">
-          Special Offer 75% off:
-        </h1>
-        <p class="special__offer--text text-black text-center text-[25px]"></p>
+
+      <!--tHE SEARCH-->
+      <div
+        class="hidden h-[80px] bg-white transition duration-500 ease-in-out w-[100%] absolute flex flex-wrap justify-between items-center search__container--main"
+      >
+        <div class="flex flex-wrap pl-[20px] items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1.5em"
+            height="1.5em"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="#acaaaa"
+              d="m19.485 20.154l-6.262-6.262q-.75.639-1.725.989t-1.96.35q-2.402 0-4.066-1.663T3.808 9.503T5.47 5.436t4.064-1.667t4.068 1.664T15.268 9.5q0 1.042-.369 2.017t-.97 1.668l6.262 6.261zM9.539 14.23q1.99 0 3.36-1.37t1.37-3.361t-1.37-3.36t-3.36-1.37t-3.361 1.37t-1.37 3.36t1.37 3.36t3.36 1.37"
+            />
+          </svg>
+          <input
+            type="search"
+            name="search"
+            placeholder="Search by keyword"
+            class="placeholder:text-black placeholder:text-[14px] focus:border-none"
+          />
+        </div>
+        <svg
+          class="mr-[20px] md:mr-[100px] search__close--bar"
+          xmlns="http://www.w3.org/2000/svg"
+          width="2em"
+          height="2em"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="none"
+            stroke="#acaaaa"
+            stroke-linecap="round"
+            d="m6 6l12 12m0-12L6 18"
+          />
+        </svg>
+      </div>
+
+      <!--The Cart-->
+      <div
+        class="hidden absolute right-0 w-[30%] top-0 bg-white h-screen items-center justify-center text-center cart__container"
+      >
+        <svg
+          class="absolute right-0 top-2 m-5 mr-[10px] cart__cross--menu"
+          xmlns="http://www.w3.org/2000/svg"
+          width="2em"
+          height="2em"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="none"
+            stroke="#acaaaa"
+            stroke-linecap="round"
+            d="m6 6l12 12m0-12L6 18"
+          />
+        </svg>
+        <svg
+          class="mt-[100px] mx-auto"
+          xmlns="http://www.w3.org/2000/svg"
+          width="2.5em"
+          height="2.5em"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="#acaaaa"
+            d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1m-9-1a2 2 0 0 1 4 0v1h-4Zm8 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h2v1a1 1 0 0 0 2 0V9h4v1a1 1 0 0 0 2 0V9h2Z"
+          />
+        </svg>
+        <p class="text-[#acaaaa]">The Cart is Empty</p>
       </div>
       <main
         class="bg-[url('/images/background-image.jpg')] bg-current bg-cover"
@@ -195,33 +267,41 @@
       >
         <div class="" id="main-container">
           <h2
-            class="mx-auto font-Modern w-[604px] ml-[10px] text-[43px] md:text-[63px] md:w-[624px] pt-[60px] md:ml-[90px] text-white"
+            class="mx-auto font-Modern w-[380px] ml-[10px] text-[43px] md:text-[63px] md:w-[624px] pt-[60px] md:ml-[90px] text-white"
           >
-            Timeless Elegance, Delivered Daily
+            Precision in Every Moment
           </h2>
           <p
-            class="mx-auto font-Modern w-[420px] ml-[10px] text-grey md:w-[580px] md:ml-[90px] md:mt-5"
+            class="mx-auto font-Modern w-[390px] ml-[10px] text-grey md:w-[580px] md:ml-[90px] md:mt-5"
           >
-            Discover Timeless Elegance at Twatches. Explore our curated
-            collection of premium watches, where craftsmanship meets style. From
-            classic designs to cutting-edge innovations, find the perfect
-            timepiece to complement every moment. Shop now and elevate your
-            wristwear game with Twatches.
+            Discover exquisite timepieces that blend timeless elegance with
+            modern sophistication. Explore our curated collection of watches,
+            crafted with precision and passion for the discerning connoisseur.
           </p>
-          <div class="flex flex-wrap">
+          <div class="flex flex-wrap ml-[10px]">
             <p
-              class="bg-primary-color font-Modern font-normal text-white py-2 px-6 rounded-md ml-[20px] mt-8 md:ml-[90px] uppercase text-[12px] cursor-pointer"
+              class="bg-primary-color font-Modern font-normal text-white py-2 px-6 rounded-md mt-8 md:ml-[90px] uppercase text-[12px] cursor-pointer btn__shop--now"
             >
               Shop Now
             </p>
             <p
               class="bg-white border border-primary-color font-Modern font-normal text-black py-2 px-6 rounded-md mt-8 ml-[15px] uppercase text-[12px] cursor-pointer"
             >
-              Learn More
+              Explore Our Collections
             </p>
           </div>
           <div class="flex flex-wrap gap-6 ml-[10px] md:ml-[90px] mt-10">
-            <i class="fa-solid fa-phone" style="color: #3e1929"></i>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#231f20"
+                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"
+              />
+            </svg>
             <p class="font-bold text-white">5678</p>
 
             <div class="flex flex-wrap gap-4">
