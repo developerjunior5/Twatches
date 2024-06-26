@@ -49,11 +49,11 @@ ScrollReveal().reveal("#story__content .section__header", {
 });
 ScrollReveal().reveal("#story__content h4", {
   ...scrollRevealOption,
-  delay: 1000,
+  delay: 500,
 });
 ScrollReveal().reveal("#story__content p", {
   ...scrollRevealOption,
-  delay: 1500,
+  delay: 500,
 });
 ScrollReveal().reveal("#story__content .story__btn", {
   ...scrollRevealOption,
@@ -80,9 +80,14 @@ const specialTime = function (e) {
   ).textContent = `Ends in ${mins}:${sec}`;
 
   if (time === 0) {
-    clearInterval(time);
+    clearInterval(specialTime);
     document.querySelector(".special__offer--container").style.backgroundColor =
       "red";
+    setTimeout(() => {
+      document
+        .querySelector(".special__offer--container")
+        .classList.add("hidden");
+    }, 1000);
   }
 };
 setInterval(specialTime, 1000);
