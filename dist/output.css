@@ -687,12 +687,20 @@ video {
   top: 300px;
 }
 
-.bottom-\[10px\] {
-  bottom: 10px;
+.left-\[90px\] {
+  left: 90px;
 }
 
-.right-\[20px\] {
-  right: 20px;
+.left-\[50px\] {
+  left: 50px;
+}
+
+.left-\[60px\] {
+  left: 60px;
+}
+
+.left-\[70px\] {
+  left: 70px;
 }
 
 .isolate {
@@ -792,6 +800,10 @@ video {
   margin-right: 20px;
 }
 
+.mr-\[50px\] {
+  margin-right: 50px;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -820,44 +832,36 @@ video {
   margin-top: 100px;
 }
 
-.mb-\[100px\] {
-  margin-bottom: 100px;
-}
-
-.mt-\[55000px\] {
-  margin-top: 55000px;
-}
-
-.mt-\[5500px\] {
-  margin-top: 5500px;
-}
-
 .mt-\[550px\] {
   margin-top: 550px;
 }
 
-.mt-\[200px\] {
-  margin-top: 200px;
+.mt-\[320px\] {
+  margin-top: 320px;
 }
 
-.mt-\[500px\] {
-  margin-top: 500px;
+.mr-\[90px\] {
+  margin-right: 90px;
 }
 
-.mt-\[400px\] {
-  margin-top: 400px;
+.ml-\[90px\] {
+  margin-left: 90px;
 }
 
-.mt-\[10px\] {
-  margin-top: 10px;
+.ml-6 {
+  margin-left: 1.5rem;
 }
 
-.mt-\[1000px\] {
-  margin-top: 1000px;
+.ml-5 {
+  margin-left: 1.25rem;
 }
 
-.mr-\[50px\] {
-  margin-right: 50px;
+.ml-0 {
+  margin-left: 0px;
+}
+
+.mr-\[40px\] {
+  margin-right: 40px;
 }
 
 .box-border {
@@ -1003,6 +1007,10 @@ video {
   height: 100vh;
 }
 
+.h-\[100px\] {
+  height: 100px;
+}
+
 .w-\[100\%\] {
   width: 100%;
 }
@@ -1019,12 +1027,12 @@ video {
   width: 250px;
 }
 
-.w-\[30\%\] {
-  width: 30%;
-}
-
 .w-\[300px\] {
   width: 300px;
+}
+
+.w-\[360px\] {
+  width: 360px;
 }
 
 .w-\[380px\] {
@@ -1061,6 +1069,14 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[350px\] {
+  width: 350px;
+}
+
+.w-\[150px\] {
+  width: 150px;
 }
 
 .flex-shrink {
@@ -2274,6 +2290,10 @@ video {
   padding-top: 80px;
 }
 
+.pr-\[40px\] {
+  padding-right: 40px;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2372,6 +2392,14 @@ video {
 
 .text-\[9px\] {
   font-size: 9px;
+}
+
+.text-\[14px\] {
+  font-size: 14px;
+}
+
+.text-\[17px\] {
+  font-size: 17px;
 }
 
 .font-bold {
@@ -2938,12 +2966,6 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.hover\:scale-50:hover {
-  --tw-scale-x: .5;
-  --tw-scale-y: .5;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -2982,15 +3004,44 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:ml-6 {
+    margin-left: 1.5rem;
+  }
+
+  .sm\:mt-\[320px\] {
+    margin-top: 320px;
+  }
+
   .sm\:underline {
     text-decoration-line: underline;
   }
 }
 
 @media (min-width: 768px) {
+  .md\:left-0 {
+    left: 0px;
+  }
+
+  .md\:left-\[50px\] {
+    left: 50px;
+  }
+
+  .md\:left-\[150px\] {
+    left: 150px;
+  }
+
+  .md\:left-\[200px\] {
+    left: 200px;
+  }
+
   .md\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .md\:ml-\[90px\] {
@@ -3009,16 +3060,24 @@ video {
     margin-top: 1.25rem;
   }
 
+  .md\:mr-\[50px\] {
+    margin-right: 50px;
+  }
+
+  .md\:mt-\[550px\] {
+    margin-top: 550px;
+  }
+
+  .md\:ml-0 {
+    margin-left: 0px;
+  }
+
   .md\:flex {
     display: flex;
   }
 
   .md\:hidden {
     display: none;
-  }
-
-  .md\:h-\[250px\] {
-    height: 250px;
   }
 
   .md\:h-\[220px\] {
@@ -3035,6 +3094,14 @@ video {
 
   .md\:w-\[624px\] {
     width: 624px;
+  }
+
+  .md\:w-\[200px\] {
+    width: 200px;
+  }
+
+  .md\:w-\[500px\] {
+    width: 500px;
   }
 
   .md\:grid-cols-2 {
@@ -3084,9 +3151,38 @@ video {
   .md\:text-\[63px\] {
     font-size: 63px;
   }
+
+  .md\:text-\[28px\] {
+    font-size: 28px;
+  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .lg\:mr-\[50px\] {
+    margin-right: 50px;
+  }
+
+  .lg\:mt-\[550px\] {
+    margin-top: 550px;
+  }
+
+  .lg\:h-\[700px\] {
+    height: 700px;
+  }
+
+  .lg\:w-\[400px\] {
+    width: 400px;
+  }
+
+  .lg\:w-\[500px\] {
+    width: 500px;
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }

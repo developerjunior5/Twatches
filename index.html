@@ -324,54 +324,58 @@
       <div class="flex flex-col gap-4 md:gap-1 md:flex-row justify-center">
         <div class="cursor-pointer hover:scale-250">
           <div class="flex flex-wrap">
-            <h5
-              class="bg-white text-black font-bold font-Poppins absolute mt-[550px] mr-[50px] h-[50px] text-center w-[200px] items-center flex flex-wrap justify-between cursor-pointer"
-            >
-              Mens Collection
-              <svg
-                class="mr-[10px]"
-                xmlns="http://www.w3.org/2000/svg"
-                width="1em"
-                height="1em"
-                viewBox="0 0 15 15"
+            <a href="/mens-collection">
+              <h5
+                class="bg-white text-black font-bold font-Poppins absolute mt-[320px] ml-6 md:ml-0 lg:mt-[550px] lg:mr-[50px] h-[50px] text-center w-[200px] items-center flex flex-wrap justify-between cursor-pointer"
               >
-                <path
-                  fill="black"
-                  d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
-                />
-              </svg>
-            </h5>
+                Mens Collection
+                <svg
+                  class="mr-[10px]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 15 15"
+                >
+                  <path
+                    fill="black"
+                    d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
+                  />
+                </svg>
+              </h5>
+            </a>
           </div>
           <img
             src="/images//man-weraing watch.jpg"
             alt="man-wearing-watch"
-            class="w-[600px] h-[700px]"
+            class="w-[350px] lg:w-[500px] h-[400px] lg:h-[700px] mx-auto lg:mx-0"
           />
         </div>
         <div>
           <div class="flex flex-wrap">
-            <h5
-              class="bg-white text-black font-bold font-Poppins absolute mt-[550px] mr-[50px] h-[50px] text-center w-[200px] items-center flex flex-wrap justify-between cursor-pointer"
-            >
-              Womens Collection
-              <svg
-                class="mr-[10px]"
-                xmlns="http://www.w3.org/2000/svg"
-                width="1em"
-                height="1em"
-                viewBox="0 0 15 15"
+            <a href="/womens-collection">
+              <h5
+                class="bg-white text-black font-bold font-Poppins absolute mt-[320px] ml-6 md:ml-0 lg:mt-[550px] lg:mr-[50px] h-[50px] text-center w-[200px] items-center flex flex-wrap justify-between cursor-pointer"
               >
-                <path
-                  fill="black"
-                  d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
-                />
-              </svg>
-            </h5>
+                Womens Collection
+                <svg
+                  class="mr-[10px]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 15 15"
+                >
+                  <path
+                    fill="black"
+                    d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
+                  />
+                </svg>
+              </h5>
+            </a>
           </div>
           <img
             src="images/lady-wearing-watch.jpg"
             alt="lady-wearing-watch"
-            class="w-[600px] h-[700px]"
+            class="w-[350px] lg:w-[500px] h-[400px] lg:h-[700px] mx-auto lg:mx-0"
           />
         </div>
       </div>
@@ -439,31 +443,43 @@
       </div>
     </section>
     <section>
-      <h5 class="text-center">Contact Us</h5>
-      <p class="text-center">Let's have a conversation....</p>
-      <div>
-        <form class="mx-auto">
+      <h5 class="text-center font-Modern text-[20px] md:text-[40px]">
+        Contact Us
+      </h5>
+      <p class="text-center font-Rubik text-[14px] md:text-[28px]">
+        Let's have a conversation....
+      </p>
+      <div class="flex flex-col md:flex-row justify-between">
+        <form class="flex flex-col mx-auto">
+          <textarea
+            type="text"
+            name="message"
+            placeholder="Please enter you message"
+            class="mb-5 h-[100px] w-[300px] md:w-[500px] p-3 border border-gray-400 focus:ring-primary-color rounded-md"
+          ></textarea>
           <input
             type="name"
             name="name"
             placeholder="Please enter you name"
-            class="mb-5 h-[50px] w-[300px] p-3 border border-gray-400 focus:ring-primary-color rounded-md"
+            class="mb-5 h-[50px] w-[300px] md:w-[500px] p-3 border border-gray-400 focus:ring-primary-color rounded-md"
           />
           <input
             type="email"
             name="email"
             placeholder="Please enter you email"
-            class="mb-5 h-[50px] w-[300px] p-3 border border-gray-400 focus:ring-primary-color rounded-md"
+            class="mb-5 h-[50px] w-[300px] md:w-[500px] p-3 border border-gray-400 focus:ring-primary-color rounded-md"
           />
-          <textarea
-            type="text"
-            name="message"
-            placeholder="Please enter you message"
-            class="mb-5 h-[300px] w-[300px] p-3 border border-gray-400 focus:ring-primary-color rounded-md"
-          ></textarea>
-          <button type="submit">Submit</button>
+          <div class="items-start mb-5">
+            <button
+              type="submit"
+              class="bg-primary-color text-white text-center uppercase font-normal font-Poppins py-2 px-5"
+            >
+              Submit
+            </button>
+          </div>
         </form>
-        <div>
+        <div class="pr-[40px] mx-auto md:mx-0">
+          <h6 class="font-bold font-Poppins text-[17px]">HeadQuarters</h6>
           <p>Sandton, Johanneburg</p>
         </div>
       </div>
