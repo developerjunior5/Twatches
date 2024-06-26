@@ -32,11 +32,11 @@ ScrollReveal().reveal("#main-container h2", {
   ...scrollRevealOption,
   delay: 500,
 });
-ScrollReveal().reveal("#watches ", {
+ScrollReveal().reveal(".watches__main-container ", {
   ...scrollRevealOption,
   delay: 500,
 });
-ScrollReveal().reveal("#main-container p", {
+ScrollReveal().reveal(".collection__container ", {
   ...scrollRevealOption,
   delay: 1000,
 });
