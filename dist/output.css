@@ -1031,6 +1031,10 @@ video {
   width: 340px;
 }
 
+.w-\[320px\] {
+  width: 320px;
+}
+
 .flex-shrink {
   flex-shrink: 1;
 }
