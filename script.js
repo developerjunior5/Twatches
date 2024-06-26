@@ -2,10 +2,14 @@ const Menu = document.querySelector("#menu");
 const MobileNav = document.querySelector("#mobile-nav");
 loginButton = document.querySelector("btn-login");
 loginModal = document.querySelector("modal-login");
+closeNavbar = document.querySelector(".close__menu");
 
 Menu.addEventListener("click", function () {
   MobileNav.classList.toggle("hidden");
-  Menu.classList.add("hidden");
+});
+
+closeNavbar.addEventListener("click", function () {
+  MobileNav.classList.toggle("hidden");
 });
 
 const scrollRevealOption = {
@@ -96,14 +100,6 @@ setInterval(specialTime, 1000);
 //1 show modal using the btn
 
 //smooth scrolling
-document.querySelector(".nav__links").addEventListener("click", function (e) {
-  if (e.target.classList.contains("nav__link")) {
-    e.preventDefault();
-
-    const id = e.target.getAttribute("href");
-    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
-  }
-});
 
 //sticky navbar
 const nav = document.querySelector(".nav");
@@ -123,7 +119,20 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 
 headerObserver.observe(header);
 
-document.querySelector(".btn__login").addEventListener("click", function () {
-  console.log("clicked");
-  document.querySelector(".modal__login").classList.toggle("hidden");
-});
+document
+  .querySelector(".btn__login--submit")
+  .addEventListener("click", function (e) {
+    if (
+      document.querySelector(".password__input").value === "princess" &&
+      document.querySelector(".email__input").value ===
+        "godfreyjunior@gmail.com"
+    ) {
+      setTimeout(() => {
+        document.querySelector(".btn__login--submit").textContent =
+          "Connecting....";
+      }, 1000);
+      loginModal.classList.add("hidden");
+    } else {
+      console.log("wrong");
+    }
+  });

@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         "primary-color": "#1E3F20",
         grey: "#616060",
+        secondary: "#231f20",
       },
       fontFamily: {
         Rubik: ["Rubik", ...defaultTheme.fontFamily.sans],
