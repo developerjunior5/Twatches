@@ -192,7 +192,7 @@
 
       <!--tHE SEARCH-->
       <div
-        class="hidden h-[80px] bg-white transition duration-500 ease-in-out w-[100%] absolute flex flex-wrap justify-between items-center search__container--main"
+        class="hidden h-[70px] bg-white transition duration-500 ease-in-out w-[100%] absolute flex flex-wrap justify-between items-center search__container--main"
       >
         <div class="flex flex-wrap pl-[20px] items-center">
           <svg
@@ -231,7 +231,7 @@
 
       <!--The Cart-->
       <div
-        class="hidden absolute right-0 w-[30%] top-0 bg-white h-screen items-center justify-center text-center cart__container"
+        class="hidden absolute right-0 w-[30%] top-0 bg-white h-screen items-center justify-center text-center cart__container Z-10"
       >
         <svg
           class="absolute right-0 top-2 m-5 mr-[10px] cart__cross--menu"
@@ -262,17 +262,17 @@
         <p class="text-[#acaaaa]">The Cart is Empty</p>
       </div>
       <main
-        class="bg-[url('/images/background-image.jpg')] bg-current bg-cover"
+        class="bg-[url('/images/background-image.jpg')] bg-current bg-cover h-[700px]"
         id="header"
       >
         <div class="" id="main-container">
           <h2
-            class="mx-auto font-Modern w-[380px] ml-[10px] text-[43px] md:text-[63px] md:w-[624px] pt-[60px] md:ml-[90px] text-white"
+            class="mx-auto font-Modern w-[380px] ml-[10px] text-[43px] md:text-[63px] md:w-[624px] pt-[80px] md:ml-[90px] text-white"
           >
             Precision in Every Moment
           </h2>
           <p
-            class="mx-auto font-Modern w-[390px] ml-[10px] text-grey md:w-[580px] md:ml-[90px] md:mt-5"
+            class="mx-auto font-Modern w-[380px] ml-[10px] text-white md:w-[580px] md:ml-[90px] md:mt-5"
           >
             Discover exquisite timepieces that blend timeless elegance with
             modern sophistication. Explore our curated collection of watches,
@@ -321,13 +321,27 @@
       >
         We value Quality over Quantity
       </p>
-      <div class="flex flex-col mx-auto gap-4 md:gap-1 md:flex-row">
-        <div>
-          <h5
-            class="bg-white text-black font-bold font-Poppins absolute mt-[100px]"
-          >
-            Mens Collection
-          </h5>
+      <div class="flex flex-col gap-4 md:gap-1 md:flex-row justify-center">
+        <div class="cursor-pointer hover:scale-250">
+          <div class="flex flex-wrap">
+            <h5
+              class="bg-white text-black font-bold font-Poppins absolute mt-[550px] mr-[50px] h-[50px] text-center w-[200px] items-center flex flex-wrap justify-between cursor-pointer"
+            >
+              Mens Collection
+              <svg
+                class="mr-[10px]"
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 15 15"
+              >
+                <path
+                  fill="black"
+                  d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
+                />
+              </svg>
+            </h5>
+          </div>
           <img
             src="/images//man-weraing watch.jpg"
             alt="man-wearing-watch"
@@ -335,6 +349,25 @@
           />
         </div>
         <div>
+          <div class="flex flex-wrap">
+            <h5
+              class="bg-white text-black font-bold font-Poppins absolute mt-[550px] mr-[50px] h-[50px] text-center w-[200px] items-center flex flex-wrap justify-between cursor-pointer"
+            >
+              Womens Collection
+              <svg
+                class="mr-[10px]"
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 15 15"
+              >
+                <path
+                  fill="black"
+                  d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
+                />
+              </svg>
+            </h5>
+          </div>
           <img
             src="images/lady-wearing-watch.jpg"
             alt="lady-wearing-watch"
@@ -407,28 +440,33 @@
     </section>
     <section>
       <h5 class="text-center">Contact Us</h5>
-      <p>Let's have a conversation....</p>
-      <form class="mx-auto">
-        <input
-          type="name"
-          name="name"
-          placeholder="Please enter you name"
-          class="mb-5 h-[50px] w-[300px] p-3 border border-gray-400 focus:ring-primary-color rounded-md"
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Please enter you email"
-          class="mb-5 h-[50px] w-[300px] p-3 border border-gray-400 focus:ring-primary-color rounded-md"
-        />
-        <textarea
-          type="text"
-          name="message"
-          placeholder="Please enter you message"
-          class="mb-5 h-[300px] w-[300px] p-3 border border-gray-400 focus:ring-primary-color rounded-md"
-        ></textarea>
-        <button type="submit">Submit</button>
-      </form>
+      <p class="text-center">Let's have a conversation....</p>
+      <div>
+        <form class="mx-auto">
+          <input
+            type="name"
+            name="name"
+            placeholder="Please enter you name"
+            class="mb-5 h-[50px] w-[300px] p-3 border border-gray-400 focus:ring-primary-color rounded-md"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Please enter you email"
+            class="mb-5 h-[50px] w-[300px] p-3 border border-gray-400 focus:ring-primary-color rounded-md"
+          />
+          <textarea
+            type="text"
+            name="message"
+            placeholder="Please enter you message"
+            class="mb-5 h-[300px] w-[300px] p-3 border border-gray-400 focus:ring-primary-color rounded-md"
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        <div>
+          <p>Sandton, Johanneburg</p>
+        </div>
+      </div>
     </section>
     <section class="bg-primary-color p-4">
       <h5 class="font-Modern text-[20px]">Subscribe to our Newsletter</h5>
@@ -453,9 +491,73 @@
     <section>
       <h6>reviews</h6>
     </section>
-    <footer class="h-[50px] text-center">
-      <h6 class="text-gray-500 mt-10">
-        Copyright &copy; 2024 developedbyjunior | All rights reserved
+    <footer class="h-[300px] md:h-[220px] text-center bg-[#231f20]">
+      <div class="flex flex-wrap justify-between">
+        <div class="grid grid-cols-2 md:grid-cols-3 md:gap-[50px] ml-[30px]">
+          <p class="font-bold text-white uppercase font-Rubik">Shop</p>
+          <p class="font-bold text-white uppercase font-Rubik">Categories</p>
+          <p class="font-bold text-white uppercase font-Rubik">Customer Care</p>
+        </div>
+        <div class="">
+          <p class="font-bold text-white uppercase font-Rubik mt-5 md:mt-0">
+            Subscribe
+          </p>
+          <h6 class="text-[11px] font-normal text-white w-[300px]">
+            Be the first to know about our latest arrivals, exclusive offers,
+            and insider updates by subscribing to our newsletter.
+          </h6>
+          <button
+            class="text-white font-semibold font-Poppins bg-primary-color py-2 px-5 w-[250px] rounded-lg mt-4"
+          >
+            Subscribe
+          </button>
+          <h6 class="mt-10 font-bold text-white uppercase font-Rubik">
+            FOLLOW US ON SOCIAL PAGES
+          </h6>
+          <div class="flex flex-wrap gap-5 ml-[45px]">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="white"
+                d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <g fill="none">
+                <path
+                  stroke="white"
+                  stroke-width="2"
+                  d="M3 11c0-3.771 0-5.657 1.172-6.828C5.343 3 7.229 3 11 3h2c3.771 0 5.657 0 6.828 1.172C21 5.343 21 7.229 21 11v2c0 3.771 0 5.657-1.172 6.828C18.657 21 16.771 21 13 21h-2c-3.771 0-5.657 0-6.828-1.172C3 18.657 3 16.771 3 13z"
+                />
+                <circle cx="16.5" cy="7.5" r="1.5" fill="white" />
+                <circle cx="12" cy="12" r="3" stroke="white" stroke-width="2" />
+              </g>
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="white"
+                d="M21.81 6.227c.058-.08-.028-.185-.12-.149a8.489 8.489 0 0 1-2.05.513a4.13 4.13 0 0 0 1.72-2.02c.034-.086-.06-.163-.14-.118c-.727.401-1.51.69-2.325.857a.1.1 0 0 1-.093-.03a4.1 4.1 0 0 0-6.991 3.65a.102.102 0 0 1-.104.123a11.64 11.64 0 0 1-8.224-4.17a.098.098 0 0 0-.163.015a4.16 4.16 0 0 0-.48 1.943a4.09 4.09 0 0 0 1.82 3.41a4.05 4.05 0 0 1-1.709-.43c-.068-.035-.15.014-.147.09a4.23 4.23 0 0 0 .933 2.468A4.1 4.1 0 0 0 6.1 13.79a3.93 3.93 0 0 1-1.1.17a4.901 4.901 0 0 1-.606-.045c-.075-.01-.136.06-.11.13A4.11 4.11 0 0 0 8.06 16.73a8.22 8.22 0 0 1-5.625 1.741c-.106-.007-.155.134-.064.188a11.57 11.57 0 0 0 5.919 1.62A11.59 11.59 0 0 0 20 8.6v-.48a.1.1 0 0 1 .04-.08a8.433 8.433 0 0 0 1.77-1.813"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <h6 class="text-white relative bottom-0 font-Modern text-start">
+        &copy; 2024 developedbyjunior | All rights reserved
       </h6>
     </footer>
     <div
