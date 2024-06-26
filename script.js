@@ -65,6 +65,28 @@ ScrollReveal().reveal("#client__image img", {
   origin: "right",
 });
 
+//timer
+
+//1 create the timer
+let time = 60;
+
+const specialTime = function (e) {
+  const mins = String(Math.trunc(time / 60)).padStart(2, 0);
+  const sec = String(Math.trunc(time % 60)).padStart(2, 0);
+
+  time--;
+  document.querySelector(
+    ".special__offer--text"
+  ).textContent = `Ends in ${mins}:${sec}`;
+
+  if (time === 0) {
+    clearInterval(time);
+    document.querySelector(".special__offer--container").style.backgroundColor =
+      "red";
+  }
+};
+setInterval(specialTime, 1000);
+
 //login-modal
 //1 show modal using the btn
 
@@ -84,7 +106,6 @@ const header = document.querySelector(".header");
 const navHeight = nav.getBoundingClientRect().height;
 const stickyNav = function (entries) {
   const [entry] = entries;
-  console.log(entry);
 
   if (!entry.isIntersecting) nav.classList.add("sticky");
   else nav.classList.remove("sticky");
